@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
 
 function App() {
+  let head1 = "Mobile Operating System";
+  let head2 = "Mobile Manufactures";
+
+  let body1= ["Android","BlackBerry","Iphone","Window"];
+  let body2= ["Samsung","HTC","Micromax","Apple"];
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Card title={head1} comp={body1}/>
+      <Card title={head2} comp={body2}/>
     </div>
-  );
+  )
 }
 
-export default App;
+function Card(props){
+  return(
+<div>
+<h1>{props.title}</h1>
+<ul>
+  {props.comp.map(item => <li>{item}</li>)}
+</ul>
+
+</div>
+
+  )
+}
+export default App
