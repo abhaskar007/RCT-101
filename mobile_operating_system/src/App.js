@@ -1,5 +1,11 @@
-import React from 'react'
+import React, { Children } from 'react'
 import './App.css'
+var style1 = {
+  color: "green"
+}
+var style2 = {
+  color: "blue"
+}
 
 function App() {
   let head1 = "Mobile Operating System";
@@ -20,9 +26,9 @@ function App() {
 function Card(props){
   return(
 <div>
-<h1>{props.title}</h1>
-<ul>
-  {props.comp.map(item => <li>{item}</li>)}
+<h1 style={style1}>{props.title}</h1>
+<ul style={style2}>
+  {props.comp.map(item => <li style={{listStyle:"circle"}}  >{item}</li>)}
 </ul>
 
 </div>
