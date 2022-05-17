@@ -6,7 +6,7 @@ import Counter from './components/Counter';
 function App() {
   return (
     <div className="App">
-      <Counter propt={100}/>
+      <Counter initial_value={100}/>
       {/* <Todo/> */}
     </div>
   );
