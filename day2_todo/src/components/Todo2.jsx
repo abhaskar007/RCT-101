@@ -12,18 +12,18 @@ export const Todo2 = () => {
       <input value={value} onChange={handlechange} />
       <button
         onClick={() => {
-          setTodos([...todos, {value: value}]);
+          setTodos([...todos, { id: Date.now(), value: value }]);
           setValue("");
         }}
       >
         Add
       </button>
       {todos.map((todow) => (
-        <div>{todow.value}</div>
+        <div>
+          <input type="checkbox" />
+          <div key={todow.id}>{todow.value}</div>
+        </div>
       ))}
-      
     </div>
   );
 };
-
-

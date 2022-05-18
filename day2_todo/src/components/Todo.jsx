@@ -25,7 +25,10 @@ const Todo = () => {
         Add
       </button>
       {todos.map((todo) => (
-        <div>{todo.value}</div>
+        <div>
+          <input type="checkbox"/>
+        <div key={todo.id}>{todo.value}</div>
+        </div>
       ))}
     </div>
   );
