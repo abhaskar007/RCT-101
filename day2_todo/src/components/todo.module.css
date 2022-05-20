@@ -1,0 +1,19 @@
+.todo{
+    
+    display: flex;
+    color: navy;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    margin-left: 5px;
+    color: green;
+   
+    
+  
+}
+.btn:hover{
+    background-color: darkgreen;
+    color: white;
+}
+
