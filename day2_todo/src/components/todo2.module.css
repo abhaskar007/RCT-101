@@ -1,0 +1,12 @@
+.todo2_box{
+    display: flex;
+    justify-content: center;
+
+}
+.btn{
+    background-color: aqua;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
