@@ -1,0 +1,21 @@
+.box> div{
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 5px;
+   
+ 
+}
+.map_items{
+    margin-bottom: 5px;
+    color: blue;
+}
+.btn{
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.h_3{
+    margin: 5px;
+}
