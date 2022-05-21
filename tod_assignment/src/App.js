@@ -5,6 +5,7 @@ import { Todo } from "./components/Todo";
 function App() {
   return (
     <div className="main_div">
+      
       <div className="centre_div">
         <Todo />
       </div>

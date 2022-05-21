@@ -5,7 +5,7 @@ import styles from './todo.module.css';
 
 export const Todo = () => {
 
-  let [inp, setInp] = useState("");
+  let [inp, setInp] = useState("Write something");
   const [render, setRender] = useState([]);
 
   return (
@@ -18,7 +18,7 @@ export const Todo = () => {
         ))}
         </div>
 
-      <input placeholder='Write Something'
+      <input placeholder='Write Something'className={styles.inp_todo}
         value={inp}
         onChange={(e) => {
           setInp(e.target.value);
