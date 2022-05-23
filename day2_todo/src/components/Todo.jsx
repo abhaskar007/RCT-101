@@ -5,9 +5,9 @@ import { TodoItem } from "./TodoItem";
 const Todo = () => {
   let [newTodo, setTodo] = useState("");
   const [todos, xxx] = useState([]);
-  const handleChange = (e) => {
-    setTodo(e.target.value);
-  };
+  // const handleChange = (e) => {
+  //   setTodo(e.target.value);
+  // };
   const onDelete = (id) => {
     let oldTodo = todos.filter(todo => todo.id !== id);
     xxx(oldTodo);
@@ -15,7 +15,7 @@ const Todo = () => {
   return (
     <div>
       Todo
-      <input value={newTodo} onChange={handleChange} />
+      <input value={newTodo} onChange={(e)=>{setTodo(e.target.value)}} />
       <button
         className={styles.btn}
         onClick={() => {

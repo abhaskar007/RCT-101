@@ -8,12 +8,12 @@ export const TodoList = ({el}) => {
     <div   >
         <div style={{display:"flex",justifyContent:"space-between"}} key={el.id}>
         <div key={el.id}>{ el.value }</div>
-            <input style={{accentColor:"purple"}}  type="radio" 
+            <div style={{backgroundColor:"grey",width:"15px",height:"15px",borderRadius:"50%",border:"7px solid purple"}}   
             checked={isCompleted}
             onChange={(e)=>{
                 console.log(e);
                 setIsCompleted(e.target.checked)
-            }}/>
+            }}></div>
             
         </div>
        
