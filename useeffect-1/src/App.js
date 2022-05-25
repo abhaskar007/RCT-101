@@ -1,16 +1,20 @@
-
+import React,{useEffect, useState} from 'react';
 import './App.css';
+import { Todos } from './components/Todos';
 
 function App() {
-  fetch("http://localhost:8080/App")
-  .then((r)=> r.json())
-  .then((d)=> {
-    console.log(d);
-  })
+
+
+ 
   return (
-    <div className="App">
-      App
+    <div>
+    <div className="App" >
+    App
+    <Todos/>
     </div>
+    
+    </div>
+
   );
 }
 

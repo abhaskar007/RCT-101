@@ -1,9 +1,7 @@
 {
-    "posts": [
-      { "id": 1, "title": "hey", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
-  }
+  "todo": [
+    {"id":1, "value": "Abhishek Bhaskar","iscompleted":true},
+    {"id":2, "value": "MAx","iscompleted":false},
+    {"id":3, "value": "Duggu","iscompleted":false}
+  ]
+}
