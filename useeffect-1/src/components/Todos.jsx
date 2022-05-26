@@ -17,7 +17,8 @@ export const Todos = () => {
     })
       .then((r) => r.json())
       .then((d) => {
-        setTodo("");
+        setTodo([...todos,d])
+        setNewTodo("");
       });
   };
   //  http://m6g3bt.sse.codesandbox.io/todos
