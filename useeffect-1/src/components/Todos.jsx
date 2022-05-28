@@ -5,7 +5,7 @@ export const Todos = () => {
   const [todos, setTodo] = useState([]);
 
   const saveInfo = () => {
-    fetch(" http://localhost:8080/todo", {
+    fetch(" http://localhost:8080/todo?_page:1&_page:5", {
       method: "POST",
       headers: {
         "content-type": "application/json",
